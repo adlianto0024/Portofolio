@@ -366,7 +366,7 @@ nav{
     0% { width: 0%; }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 200px) {
     .container{
         width:600px ;
         height: 500px ;
