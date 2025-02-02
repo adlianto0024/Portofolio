@@ -368,11 +368,11 @@ nav{
     0% { width: 0%; }
 }
 
-@media screen and (min-width: 200px) {
+@media screen and (min-width: 400px) {
     .container{
         width:600px ;
         height: 500px ;
-        padding: 75px 20px;
+        padding: 75px 45px;
         margin-left: 10px;
     }
     .countainer2{
@@ -380,7 +380,9 @@ nav{
         padding: 11px;
     }
     .heading{
-        text-align: left;
+        text-align: left ;
     }
+    
+}
 
 /* MY SKILLS END */ 
