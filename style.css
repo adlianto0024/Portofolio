@@ -93,6 +93,8 @@ nav{
     padding: 15px 0;
     align-items: center;
     transition: 0.2s linear;
+    position: sticky;
+    top: 0;
 }
 .dropdown .links a:hover{
     background-color: #0bffeb;
@@ -262,7 +264,7 @@ nav{
 /* MY SKILLS */
 .title{
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     padding-bottom: 70px;
     padding-top: 30px;
     color: white;
@@ -277,6 +279,8 @@ nav{
     height: 500px ;
     padding: 75px 90px;
     margin-left: 120px;
+    min-width: 1339px;
+    
 }
 
 .heading{
@@ -323,7 +327,6 @@ nav{
     border-radius: 30px;
     animation: progressAnimation 3S;
 }
-
 .skill-per{
     height: 14px;
      border-radius: 10px;
@@ -368,7 +371,7 @@ nav{
     0% { width: 0%; }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 380px) {
     .container{
         width:600px ;
         height: 500px ;
@@ -384,5 +387,91 @@ nav{
     }
     
 }
-
 /* MY SKILLS END */ 
+
+/* Latest Project */
+.portofolio{
+    background: #081b29;
+    height: 100vh;
+}
+.portofolio h2 {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.portofolio-countainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px , 1fr));
+    gap: 2rem;
+}
+
+.portofolio-box{
+    width: 220px;
+    height: 220px;
+    justify-content: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    grid-template-rows: 1fr auto ;
+    align-items: center;
+    border: 2px solid violet;
+    position: relative;
+}
+.portofolio-layer{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: linear-gradient(rgba(0,0,0,.2), #12f7ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 2rem;
+}
+.portofolio-layer h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.portofolio-layer p{
+    font-size: .8rem;
+    margin: 5px 0 15px 0;
+}
+.portofolio-layer a{
+    background: white;
+    border-radius: 50%;
+    display: inline-flex;
+    text-decoration-line: none;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px; 
+    border: 1px solid #0bffeb;
+    outline: 2px solid white;
+}
+.portofolio-layer a i{
+    font-size: 1.2rem;
+    color: black;
+}
+.portofolio-layer:hover{
+    opacity: 1;
+}
+.portofolio-box:hover img{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.portofolio-box img {
+    width: 100%;
+}
+@media screen and (min-width: 400px) {
+    .portofolio-countainer{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px , 1fr));
+        justify-items: center;
+        }
+}
+/* Last Project END */
